@@ -25,12 +25,6 @@ img {
   max-width: 100%;
 }
 
-.wraper {
-  min-width: 1200px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
 .section-title {
   text-align: center;
   font-size: 2.25rem;
@@ -193,4 +187,38 @@ img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#feature {
+  max-width: 1240px;
+  padding: 100px 16px 50px 16px;
+  margin: -50px auto 10px auto;
+}
+#feature .gridcontainer {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#feature .card {
+  -webkit-box-shadow: 0 0 8px 4px #ccc;
+          box-shadow: 0 0 8px 4px #ccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#feature img {
+  vertical-align: top;
+}
+#feature .text {
+  padding: 30px;
+}
+#feature .category, #feature .date {
+  font-size: 0.75rem;
+}
+#feature .date {
+  text-align: right;
+}
+#feature .sampletext {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 20px 0;
 }/*# sourceMappingURL=style.css.map */

@@ -25,7 +25,27 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 5,
   centeredSlides: true,
   spaceBetween: 20, 
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
+});
+
+// Feature
+document.addEventListener('scroll', function() {
+  document.querySelectorAll('.fadein img').forEach(function(image) {
+      let scroll = window.scrollY;
+      let target = image.getBoundingClientRect().top + window.scrollY;
+      let windowHeight = window.innerHeight;
+      
+      if (scroll > target - windowHeight + 200) {
+          image.style.opacity = '1';
+          image.style.transform = 'translateY(0)';
+      }
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.fadein img').forEach(function(image) {
+      image.style.opacity = '0';
+      image.style.transform = 'translateY(20px)';
+      image.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  });
 });
