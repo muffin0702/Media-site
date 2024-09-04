@@ -210,9 +210,8 @@ img {
   }
   
   .pickup-img {
-    max-width: 100%;
     object-fit: cover;
-    padding: 30px;
+    padding: 0 30px;
     box-sizing: border-box;
   }
 }

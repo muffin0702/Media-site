@@ -212,10 +212,9 @@ img {
           box-sizing: border-box;
 }
 #pickup .pickup-img {
-  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 30px;
+  padding: 0 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
