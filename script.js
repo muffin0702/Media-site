@@ -18,13 +18,37 @@ section.forEach((section)=> {
   })
 })
 
-// Swiper Old
+// Smooth scroll
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const href = link.getAttribute("href");
+    const targetSection = document.querySelector(href);
+    const sectionTop = targetSection.getBoundingClientRect().top;
+    const currentPos = window.scrollY;
+    const target = sectionTop + currentPos;
+    window.scrollTo({
+      top: target,
+      behavior: "smooth",
+    });
+  });
+});
+
+// Swiper
 const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 4,
   centeredSlides: true,
+ 
+  //   breakpoints: {
+  //     600: {
+  //         slidesPerView: 1,
+  //         spaceBetween: 20,
+  //     }
+  // }
 });
-
 
 // Feature
 document.addEventListener('scroll', function() {
@@ -39,7 +63,6 @@ document.addEventListener('scroll', function() {
       }
   });
 });
-
 
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.fadein img').forEach(function(image) {
