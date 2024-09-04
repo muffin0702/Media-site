@@ -166,11 +166,22 @@ img {
 }
 
 #pickup {
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
 }
 #pickup .swiper-container {
-  width: 120%;
-  overflow-x: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #pickup .swiper-wrapper {
   display: -webkit-box;
@@ -182,11 +193,30 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+#pickup .swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 #pickup .pickup-img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #feature {
@@ -221,4 +251,55 @@ img {
   font-size: 0.9rem;
   font-weight: bold;
   margin: 20px 0;
+}
+
+#contact {
+  background-color: #121212;
+  color: #fff;
+  padding: 50px 0;
+}
+#contact .contact-inner {
+  max-width: 1240px;
+  padding: 0 16px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#contact .info, #contact .form {
+  width: 45%;
+}
+#contact .info p {
+  margin-bottom: 30px;
+}
+#contact input, #contact textarea {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#contact .button input {
+  width: 200px;
+  color: #fff;
+  background-color: #121212;
+  border: solid 1px #fff;
+  padding: 12px 0;
+  margin-bottom: 0;
+}
+#contact .button input:hover {
+  color: #202020;
+  background-color: #fff;
+}
+
+#footer {
+  color: #fff;
+  background-color: #121212;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.75rem;
 }/*# sourceMappingURL=style.css.map */

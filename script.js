@@ -18,14 +18,13 @@ section.forEach((section)=> {
   })
 })
 
-// Swiper
+// Swiper Old
 const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
   loop: true,
-  slidesPerView: 5,
+  slidesPerView: 4,
   centeredSlides: true,
-  spaceBetween: 20, 
 });
+
 
 // Feature
 document.addEventListener('scroll', function() {

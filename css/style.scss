@@ -186,22 +186,33 @@ img {
 
 // Pick up
 #pickup {
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
 
   .swiper-container {
-    width: 120%;
-    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .swiper-wrapper {
     display: flex;
     justify-content: center;
   }
+
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
   
   .pickup-img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
     object-fit: cover;
+    padding: 30px;
+    box-sizing: border-box;
   }
 }
 
@@ -243,4 +254,57 @@ img {
     font-weight: bold;
     margin: 20px 0;
   }
+}
+
+// Contact
+#contact {
+  background-color: $main-color;
+  color: #fff;
+  padding: 50px 0;
+
+  .contact-inner {
+    max-width: 1240px;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info, .form {
+    width: 45%;
+  }
+
+  .info p {
+    margin-bottom: 30px;
+  }
+
+  input, textarea {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .button input {
+    width: 200px;
+    color: #fff;
+    background-color: #121212;
+    border: solid 1px #fff;
+    padding: 12px 0;
+    margin-bottom: 0;
+  }
+
+  .button input:hover {
+    color: #202020;
+    background-color: #fff;
+  }
+}
+
+// Footer
+#footer {
+  color: #fff;
+  background-color: $main-color;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.75rem;
 }
