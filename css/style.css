@@ -169,54 +169,11 @@ img {
 #pickup {
   padding: 100px 0 50px 0;
 }
-#pickup .swiper-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#pickup .swiper-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#pickup .swiper-slide {
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 #pickup .pickup-img {
   -o-object-fit: cover;
-     object-fit: cover;
-  padding: 0 30px;
+  object-fit: cover;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #feature {
@@ -304,6 +261,11 @@ img {
   font-size: 0.75rem;
 }
 
+@media screen and (max-width: 768px) {
+  #pickup {
+    padding: 80px 16px;
+  }
+}
 @media screen and (max-width: 600px) {
   .section-title {
     font-size: 1.5rem;
@@ -314,6 +276,9 @@ img {
   }
   #header .lines {
     right: 20px;
+  }
+  #pickup {
+    padding: 80px 16px;
   }
   #feature {
     padding: 80px 16px;

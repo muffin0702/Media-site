@@ -37,17 +37,37 @@ links.forEach((link) => {
 });
 
 // Swiper
-const swiper = new Swiper('.swiper', {
-  loop: true,
+const swiper = new Swiper(".swiper", {
   slidesPerView: 4,
+  spaceBetween: 60,
   centeredSlides: true,
- 
-  //   breakpoints: {
-  //     600: {
-  //         slidesPerView: 1,
-  //         spaceBetween: 20,
-  //     }
-  // }
+  loop: true,
+
+  // breakpoints: {
+  //   600: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 40,
+  //   },
+  // },
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    690: { 
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    600: {
+      slidesPerView: 1,
+    },
+    100: {
+      slidesPerView: 1,
+    }
+  },
 });
 
 // Feature
